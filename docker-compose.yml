@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  app_smelly:
+    container_name: app_smelly
+    build:
+      context: docker/php
+    volumes:
+      - ./backend:/data/www:cached
